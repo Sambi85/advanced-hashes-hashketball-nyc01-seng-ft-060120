@@ -156,8 +156,11 @@ array= []
 end
 
 def gather_shoe_size
-gather_players.each do |key, value|
+i = 0
+while i < gather_players.length
+ gather_players[i][:shoe] 
 
+i += 1  
   end
 end
 pp gather_shoe_size
