@@ -155,6 +155,8 @@ array= []
   array
 end
 
+gather_players(:home)
+
 # ------------------------------------------------#
 
 def num_points_scored(baller)
