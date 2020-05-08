@@ -159,7 +159,7 @@ def gather_shoe_size
 gather_players.each do |key, value|
 
 puts key
-puts value  
+value  
   end
 end
 pp gather_shoe_size
