@@ -162,7 +162,7 @@ biggest = []
 
 while i < gather_players.length
 shoes << gather_players[i][:shoe] 
-pp shoes.max
+pp shoes.max()
 
 i += 1  
   end
