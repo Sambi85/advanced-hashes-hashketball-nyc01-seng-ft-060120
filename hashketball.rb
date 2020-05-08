@@ -190,7 +190,7 @@ def team_names
     end
     
 def player_numbers(team)
-pp  :team_name
+pp  [:home]:team_name
 game_hash.each do |key, value|
  if team == game_hash[key][:team_name]
     gather_numbers
