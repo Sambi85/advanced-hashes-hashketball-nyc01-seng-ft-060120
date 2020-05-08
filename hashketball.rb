@@ -160,13 +160,12 @@ i = 0
 shoes = []
 
 while i < gather_players.length
-shoes << gather_players[i][:shoe] 
-
-i += 1  
+  shoes << gather_players[i][:shoe] 
+    i += 1  
   end
 shoes.max()
 end
-pp gather_shoe_size
+
 
 # ------------------------------------------------#
 
@@ -221,5 +220,10 @@ while i < gather_players.length do
 end
 
 def big_shoe_rebounds
-
+i = 0
+  while i < gather_players.length
+    if gather_players[i] == gather_shoe_size
+      return gather_players[i][:rebounds]
+    end
+  end
 end
