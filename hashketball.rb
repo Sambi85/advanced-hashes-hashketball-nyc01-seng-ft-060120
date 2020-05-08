@@ -192,7 +192,7 @@ def team_names
 def player_numbers(team)
 game_hash.each do |key, value|
  if team == game_hash[key][:team_name]
-    pp game_hash[key]
+    pp key
     end  
   end    
 end
