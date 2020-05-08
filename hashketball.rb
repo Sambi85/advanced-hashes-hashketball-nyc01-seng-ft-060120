@@ -158,7 +158,7 @@ end
 def gather_shoe_size
 i = 0
 while i < gather_players.length
- gather_players[i][:shoe] 
+ puts gather_players[i][:shoe] 
 
 i += 1  
   end
