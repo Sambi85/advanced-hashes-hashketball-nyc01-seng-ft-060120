@@ -144,6 +144,13 @@ array << game_hash[:away][:team_name]
 array
 end
 
+def gather_numbers
+array= []
+i = 0
+while i < game_hash[key][:players]
+array <<  game_hash[key][:players][i][:number]
+array
+end
 
 # ------------------------------------------------#
 
@@ -179,13 +186,12 @@ def team_names
   gather_teams
     end
     
-def player_numbers(team)
-
+def player_numbers
+  pp team
 game_hash.each do |key, value|
 array = []  
   if team == game_hash[key][:team_name]
-    array <<  game_hash[key][:players][:number]  
-      end  
-  puts array
+      
+    end  
   end    
 end
