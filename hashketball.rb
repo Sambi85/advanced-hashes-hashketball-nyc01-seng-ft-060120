@@ -184,7 +184,8 @@ def player_numbers(team)
 game_hash.each do |key, value|
 array = []  
   if team == game_hash[key][:team_name]
-  array <<  game_hash[key][:players][:number]  
-    end
+    array <<  game_hash[key][:players][:number]  
+      end  
+  end    
 array
 end
