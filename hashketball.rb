@@ -1,7 +1,9 @@
 # Write your code below game_hash
+require "pry"
+
 def game_hash
   {
-    home: {
+  home: {
       team_name: "Brooklyn Nets",
       colors: ["Black", "White"],
       players: [
@@ -62,7 +64,7 @@ def game_hash
         }
       ]
     },
-    away: {
+  away: {
       team_name: "Charlotte Hornets",
       colors: ["Turquoise", "Purple"],
       players: [
@@ -127,3 +129,66 @@ def game_hash
 end
 
 # Write code here
+#--------------- HELPER METHODS -------------------#
+def gather_players
+array =[]
+array << game_hash[:home][:players] 
+array << game_hash[:away][:players] 
+array.flatten
+end
+
+def gather_teams
+array = []
+array << game_hash[:home][:team_name]
+array << game_hash[:away][:team_name]
+array
+end
+
+def gather_numbers
+array = []
+array << game_hash[value][:players][:number]
+array
+end
+
+
+# ------------------------------------------------#
+
+def num_points_scored(baller)
+i = 0
+while i < gather_players.length do
+  if baller == gather_players[i][:player_name]
+    return gather_players[i][:points]
+      end
+        i += 1
+          end
+            end
+
+def shoe_size(baller)
+  i = 0
+    while i < gather_players.length do
+      if baller == gather_players[i][:player_name]
+        return gather_players[i][:shoe]
+          end
+            i += 1
+              end
+                end
+                
+def team_colors(team_name)
+  game_hash.each do |key, value|
+    if team_name == value[:team_name]
+      return value[:colors] 
+        end
+          end
+            end
+            
+def team_names
+  gather_teams
+    end
+    
+def player_numbers(team)
+
+game_hash.each do |key, value|
+  
+  pp game_hash[key][:team_name]
+  end
+end
