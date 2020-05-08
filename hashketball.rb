@@ -157,8 +157,12 @@ end
 
 def gather_shoe_size
 i = 0
+shoes = []
+biggest = []
+
 while i < gather_players.length
- puts gather_players[i][:shoe].max 
+shoes << gather_players[i][:shoe] 
+pp shoes.max
 
 i += 1  
   end
