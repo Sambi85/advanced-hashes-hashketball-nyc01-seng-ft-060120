@@ -203,7 +203,6 @@ while i < gather_players.length do
   if player_name == gather_players[i][:player_name]
     return gather_players[i]
       end
-        i += 1
-          end
-
+    i += 1
+  end
 end
