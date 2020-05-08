@@ -155,9 +155,11 @@ array= []
   array.sort
 end
 
-def gather_shoe_size(var)
-pp var == gather_players[:player_name]
-
+def gather_shoe_size
+gather_players.each do |size|
+puts size
+  
+  end
 end
 
 
@@ -214,7 +216,7 @@ while i < gather_players.length do
   end
 end
 
-def big_shoe_rebounds(baller) 
+def big_shoe_rebounds
 i = 0
 while i < gather_players.length do
   if baller == gather_players[i][:player_name]
