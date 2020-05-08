@@ -190,12 +190,10 @@ def team_names
     end
     
 def player_numbers(team)
-var =
 
 game_hash.each do |key, value|
  if team == game_hash[key][:team_name]
-    var = gather_numbers(key)
+    puts gather_numbers(key)
     end  
   end    
-var
 end
