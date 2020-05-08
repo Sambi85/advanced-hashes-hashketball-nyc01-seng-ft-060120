@@ -144,18 +144,18 @@ array << game_hash[:away][:team_name]
 array
 end
 
-def gather_numbers(var)
+def gather_numbers
 array= []
   i = 0
-    while i < game_hash[var][:players]
-      array <<  game_hash[var][:players][i][:number]
+    while i < game_hash[:home][:players]
+      array <<  game_hash[:home][:players][i][:number]
       
       i += 1
     end
   array
 end
 
-pp gather_numbers(var)
+pp gather_numbers
 
 # ------------------------------------------------#
 
