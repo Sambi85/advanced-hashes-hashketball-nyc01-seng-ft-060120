@@ -132,17 +132,17 @@ end
 #--------------- HELPER METHODS -------------------#
 def gather_players
 array =[]
-array << game_hash[:home][:players] 
-array << game_hash[:away][:players] 
-array.flatten
-end
+  array << game_hash[:home][:players] 
+    array << game_hash[:away][:players] 
+      array.flatten
+        end
 
 def gather_teams
 array = []
-array << game_hash[:home][:team_name]
-array << game_hash[:away][:team_name]
-array
-end
+  array << game_hash[:home][:team_name]
+    array << game_hash[:away][:team_name]
+      array
+        end
 
 def gather_numbers(var)
 array= []
