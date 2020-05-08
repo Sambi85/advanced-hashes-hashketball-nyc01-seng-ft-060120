@@ -155,7 +155,7 @@ array= []
   array
 end
 
-gather_players(:home)
+pp gather_players(:home)
 
 # ------------------------------------------------#
 
