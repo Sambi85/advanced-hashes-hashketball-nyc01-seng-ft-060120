@@ -225,5 +225,6 @@ i = 0
     if gather_players[i] == gather_shoe_size
       return gather_players[i][:rebounds]
     end
+  i += 1
   end
 end
