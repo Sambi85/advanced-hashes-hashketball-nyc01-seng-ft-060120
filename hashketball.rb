@@ -190,10 +190,12 @@ def team_names
     end
     
 def player_numbers(team)
-
-game_hash.each do |key, value|
- if team == game_hash[key][:team_name]
-    return gather_numbers(key)
+  game_hash.each do |key, value|
+    if team == game_hash[key][:team_name]
+      return gather_numbers(key)
     end  
   end    
+end
+
+def player_stats
 end
