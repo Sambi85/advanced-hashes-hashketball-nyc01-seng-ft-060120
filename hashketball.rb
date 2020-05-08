@@ -166,7 +166,6 @@ while i < gather_players.length
 shoes.max()
 end
 
-
 # ------------------------------------------------#
 
 def num_points_scored(baller)
@@ -223,8 +222,8 @@ def big_shoe_rebounds
 i = 0
   while i < gather_players.length
     if gather_players[i] == gather_shoe_size
-      return gather_players[i][:rebounds]
-    end
-  i += 1
+      puts gather_players[i][:rebounds]
+      end
+    i += 1
   end
 end
