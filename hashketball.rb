@@ -193,7 +193,7 @@ def player_numbers(team)
 
 game_hash.each do |key, value|
  if team == game_hash[key][:team_name]
-    puts gather_numbers(key)
+    return gather_numbers(key)
     end  
   end    
 end
