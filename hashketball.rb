@@ -157,7 +157,7 @@ end
 
 def gather_shoe_size(var)
 pp gather_players[:shoe]
-
+end
 # ------------------------------------------------#
 
 def num_points_scored(baller)
