@@ -197,5 +197,13 @@ def player_numbers(team)
   end    
 end
 
-def player_stats
+def player_stats(player_name)
+i = 0
+while i < gather_players.length do
+  if player_name == gather_players[i][:player_name]
+    return gather_players[i]
+      end
+        i += 1
+          end
+
 end
