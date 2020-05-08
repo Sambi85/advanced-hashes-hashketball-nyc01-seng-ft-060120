@@ -156,8 +156,12 @@ array= []
 end
 
 def gather_shoe_size(var)
-pp gather_players[:shoe]
+pp var == gather_players[:player_name]
+
 end
+
+
+
 # ------------------------------------------------#
 
 def num_points_scored(baller)
