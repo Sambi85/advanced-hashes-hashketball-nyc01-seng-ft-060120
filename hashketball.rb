@@ -147,7 +147,7 @@ end
 def gather_numbers
 array= []
   i = 0
-    while i < game_hash[:home][:players]
+    while i < game_hash[:home][:players].length
       array <<  game_hash[:home][:players][i][:number]
       
       i += 1
