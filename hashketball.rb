@@ -155,7 +155,7 @@ array= []
   array
 end
 
-pp gather_numbers(:home)
+pp gather_numbers(home)
 
 # ------------------------------------------------#
 
