@@ -221,7 +221,7 @@ end
 def big_shoe_rebounds
 i = 0
   while i < gather_players.length
-    if gather_players[i][:shoe]] == gather_shoe_size
+    if gather_players[i][:shoe] == gather_shoe_size
       puts gather_players[i][:rebounds]
       end
     i += 1
