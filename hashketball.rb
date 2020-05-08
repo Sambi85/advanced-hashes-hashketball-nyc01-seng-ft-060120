@@ -186,6 +186,6 @@ array = []
   if team == game_hash[key][:team_name]
     array <<  game_hash[key][:players][:number]  
       end  
+  puts array
   end    
-array
 end
