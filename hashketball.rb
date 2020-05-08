@@ -206,3 +206,14 @@ while i < gather_players.length do
     i += 1
   end
 end
+
+def big_shoe_rebounds(baller) 
+i = 0
+while i < gather_players.length do
+  if baller == gather_players[i][:player_name]
+    return gather_players[i][:points]
+      end
+        i += 1
+          end
+
+end
