@@ -156,12 +156,13 @@ array= []
 end
 
 def gather_shoe_size
-gather_players.each do |size|
-puts size
-  
+gather_players.each do |key, value|
+
+puts key
+puts value  
   end
 end
-
+pp gather_shoe_size
 
 # ------------------------------------------------#
 
