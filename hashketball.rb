@@ -190,12 +190,10 @@ def team_names
     end
     
 def player_numbers(team)
-  
+pp  :team_name
 game_hash.each do |key, value|
-array = []  
-  
-  if team == game_hash[key][:team_name]
-    gather_numbers(game_hash[key])
+ if team == game_hash[key][:team_name]
+    gather_numbers
     end  
   end    
 end
