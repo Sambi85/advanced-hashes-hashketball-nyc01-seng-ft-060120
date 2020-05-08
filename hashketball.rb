@@ -186,7 +186,7 @@ def team_names
   gather_teams
     end
     
-def player_numbers
+def player_numbers(team)
   pp team
 game_hash.each do |key, value|
 array = []  
