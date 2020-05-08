@@ -155,6 +155,9 @@ array= []
   array.sort
 end
 
+def gather_shoe_size(var)
+pp gather_players[:shoe]
+
 # ------------------------------------------------#
 
 def num_points_scored(baller)
